@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Dating Site</title>
+		<style type="text/css" rel="stylesheet">
+			fieldset {
+				/* background-color: rgb(255, 248, 224); */
+				border: 10px rgb(164, 184, 158);
+				margin-bottom: 10px;
+				width:720px;
+			}
+			label {
+				width: 180px;
+				display: inline-block;
+				text-align: left;
+				vertical-align: top;
+				margin-bottom: 10px;
+			}
+			.options {
+				width:auto;
+			}
+			.range-low, .range-high {
+				text-align: center;
+				color: white;
+				display: inline-block;
+				width:60px;
+				vertical-align: top;
+			}
+			.range-low {
+				background-color: red;
+			}
+			.range-high {
+				background-color: blue;
+			}
+			textarea {
+				width: 360px;
+				height:	50px;
+			}
+		</style>
+	</head>
+	<body style="background-image: url('https://www.naturalint.com/wp-content/uploads/2019/09/5-tips-for-marketing-dating-apps-and-sites-e1567953565445.jpg');background-repeat: no-repeat; background-size: cover; background-attachment: fixed">
+		<h1>Please Enter Your Details for Our Dating Application!</h1>
+		<form action="https://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php" enctype="multipart/form-data" method="get">
+			<fieldset>
+				<legend><h4 style="color:red;">Upload profile photo:</h4></legend>
+					<label for="your-image">Your Image:</label><input type="file" required><br />
+					<label for="image-preview">Image Preview:</label><img src="" id="preview"><br />
+			</fieldset>
+			<fieldset>
+				<legend><h4 style="color:red;">General Details :</h4></legend>
+				<label for="name">Name:</label>			<input type="text" name="name" placeholder="full name" required><br />
+				<label for="gender">Gender:</label>		<input type="radio" name="gender" value="male" required><label for="gender-male" class="options">Male</label><input type="radio" name="gender" value="female"><label for="gender-female" class="options">Female</label><br />
+				<label for="age">Age:</label>			<input type="number" name="age" required><br />
+				<label for="dob">Date of birth:</label>		<input type="date" name="dob"><br />
+				<label for="fav-color">Favorite color:</label>	<input type="color" name="fav-color" value="#000000"><br />
+				<label for="height">Height(in cm):</label>			<input type="number" name="Height" required><br />
+			</fieldset>
+			<fieldset>
+				<legend><h4 style="color:red;">Contact Information</h4></legend>
+				<label for="email">Email:</label><input type="email" name="email" required><br />
+				<label for="mobile">Mobile:</label><input type="tel" name="mobile"><br />
+				<label for="address">Address:</label><textarea name="address"></textarea><br />
+				<label for="method-to-contact">Method to contact you:</label>
+					<input type="checkbox">
+						<label class="options" for="contact-email">Email</label>
+					<input type="checkbox">
+						<label class="options" for="contact-whatsapp">WhatsApp</label>
+					<input type="checkbox">
+						<label  class="options"for="contact-in-app-chat">In-app chat</label>
+			</fieldset>
+			<h3 style="color:red;">Check all that apply to you:</h3>
+                    <input type="checkbox" id="quality1" name="Quality1" value="1"> I have tattoos and/or piercings.</input><br>
+					<input type="checkbox" id="quality2" name="Quality2" value="2"> I am more than 2 years older than my daughter.</input><br>
+					<input type="checkbox" id="Quality3" name="Quality3" value="3"> I own a panel van or Ferrari.</input><br>
+					<input type="checkbox" id="Quality4" name="Quality4" value="4"> I work full-time.</input><br>
+					<input type="checkbox" id="Quality1" name="Quality1" value="5">  My parents are rich.</input><br>
+					<input type="checkbox" id="Quality6" name="Quality6" value="6"> Is the date at a private/public location.</input><br>
+					
+
+					<h3 style="color:red;">Select your highest education qualification</h3>
+					<label for="education">Education qualification:</label>
+					<select name="qualification" id="qualification">
+					  <option value="High school">High School</option>
+					  <option value="Inter">Inter</option>
+					  <option value="graduation">Graduation</option>
+					  <option value="Post graduation">Post graduation</option>
+					  <option value="Phd">Phd</option>
+					</select>
+					<br><br>
+					<label for="address">Why do you want to date my daughter (50 words input)?:</label><textarea name="address"></textarea><br />
+				<h3 style="color:red;">Please Upload your bank statement:</h3>
+                    <label for="myfile">Select a file:</label>
+					<input type="file" id="myfile" name="myfile"><br><br>
+				</fieldset>
+			<input type="submit">
+		</form>
+		<script src="https://www.cse.ust.hk/~rossiter/dating_web_site.js"></script>
+	</body>
+</html>
